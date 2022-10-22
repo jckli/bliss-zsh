@@ -1,3 +1,5 @@
+> **Note**: The modifications are all just personal modifications to the theme to make it work better for me. If you are looking for the original, please head over to [bliss-zsh](https://github.com/joshjon/bliss-zsh). Also, I don't use the bliss iTerm theme (don't use iTerm2), so theres no fork for that.
+
 <p align="center">
   <br>
   <img src="https://raw.githubusercontent.com/joshjon/bliss-docs/master/bliss-icon.svg?sanitize=true" alt="icon" height="145">
