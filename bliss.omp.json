@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#8A2BE2",
+          "properties": {
+            "text": "[{{ .UserName }}]",
+            "prefix": ""
+          }
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#DB7093",
+          "properties": {
+            "style": "full",
+            "truncate_to_repo": false,
+            "prefix": ""
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#00FFFF",
+          "properties": {
+            "prefix": "",
+            "branch_icon": "",
+            "template": "({{ .HEAD }})"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#00FFFF",
+          "properties": {
+            "prefix": "",
+            "branch_icon": "",
+            "template": "{{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if .Working.Changed }}<yellow>x</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}|{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if not (.Working.Changed) }}✓{{ end }}"
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#FFFFFF",
+          "properties": {
+            "prefix": "",
+            "text": "$"
+          }
+        }
+      ]
+    }
+  ]
+}
