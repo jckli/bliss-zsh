@@ -8,7 +8,7 @@
         {
           "type": "text",
           "style": "plain",
-          "foreground": "#8A2BE2",
+          "foreground": "#a463f7",
           "properties": {
             "text": "[{{ .UserName }}]",
             "prefix": ""
@@ -17,7 +17,7 @@
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#DB7093",
+          "foreground": "#f3b2fa",
           "properties": {
             "style": "full",
             "truncate_to_repo": false,
