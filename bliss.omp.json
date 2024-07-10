@@ -31,17 +31,41 @@
           "properties": {
             "prefix": "",
             "branch_icon": "",
+            "fetch_status": true,
             "template": "({{ .HEAD }})"
           }
         },
         {
           "type": "git",
           "style": "plain",
-          "foreground": "#00FFFF",
+          "foreground": "#FFFF00",
           "properties": {
             "prefix": "",
             "branch_icon": "",
-            "template": "{{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if .Working.Changed }}<yellow>x</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }}|{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if not (.Working.Changed) }}✓{{ end }}"
+            "fetch_status": true,
+            "template": "{{ if .Working.Changed }}x{{ end }}"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#00FF00",
+          "properties": {
+            "prefix": "",
+            "branch_icon": "",
+            "fetch_status": true,
+            "template": "{{ if .Staging.Changed }}{{ end }}"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#00FF00",
+          "properties": {
+            "prefix": "",
+            "branch_icon": "",
+            "fetch_status": true,
+            "template": "{{ if and (not .Working.Changed) (not .Staging.Changed) }}✓{{ end }}"
           }
         },
         {
