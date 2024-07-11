@@ -1,4 +1,4 @@
-> **Note**: The modifications are all just personal modifications to the theme to make it work better for me. If you are looking for the original, please head over to [bliss-zsh](https://github.com/joshjon/bliss-zsh). Also, I don't use the bliss iTerm theme (don't use iTerm2), so theres no fork for that.
+> **Note**: The modifications are all just personal modifications to the theme to make it work better for me. I have also forked my own theme over to oh-my-posh as well and you can find that in this repository too. If you are looking for the original, please head over to [bliss-zsh](https://github.com/joshjon/bliss-zsh). Also, I don't use the bliss iTerm theme (don't use iTerm2), so theres no fork for that.
 
 <p align="center">
   <br>
@@ -10,26 +10,28 @@
   <br>
 </p>
 
-![session](https://raw.githubusercontent.com/joshjon/bliss-docs/master/bliss-zsh/images/bliss-zsh.png)
+![session](https://github.com/jckli/bliss-zsh/blob/master/bliss-zsh-jckli.png)
 
 ## About
 
-This is a theme for [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) and is designed to be used with the [Bliss iTerm](https://github.com/joshjon/bliss-iterm) theme which is applied in the screenshot above.
+This is a theme for [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) and is designed to be used with the [Bliss iTerm](https://github.com/joshjon/bliss-iterm) theme ~which is applied in the screenshot above.~ I don't use iTerm2, so my terminal theme is very basic.
 
 ### Setting the Mood
+
 Bliss looks even better with the following terminal setup:
-* [iTerm2](https://www.iterm2.com/)
-* [Bliss iTerm Theme](https://github.com/joshjon/bliss-iterm)
-* [Bliss dircolors](https://github.com/joshjon/bliss-dircolors)
+
+- [iTerm2](https://www.iterm2.com/)
+- [Bliss iTerm Theme](https://github.com/joshjon/bliss-iterm)
+- [Bliss dircolors](https://github.com/joshjon/bliss-dircolors)
 
 ### Color Properties
 
-* Home: blue
-* Current path: magenta
-* Git branch: cyan
-* Git clean: green
-* Git dirty: yellow
-* Prompt symbol: magenta
+- Home: blue
+- Current path: magenta
+- Git branch: cyan
+- Git clean: green
+- Git dirty: yellow
+- Prompt symbol: magenta
 
 ## Installation
 
@@ -40,9 +42,9 @@ You can keep up to date by using git.
 1. Clone the Bliss Zsh repo.
 2. Create a symbolic link to the Oh My Zsh theme folder:
 
-        ln -s bliss.zsh-theme <oh-my-zsh-path>/themes/bliss.zsh-theme
+                     ln -s bliss.zsh-theme <oh-my-zsh-path>/themes/bliss.zsh-theme
 
-   Changes pulled from Git will now automatically update in the Oh My Zsh theme folder.
+      Changes pulled from Git will now automatically update in the Oh My Zsh theme folder.
 
 3. Add `ZSH_THEME="bliss"` to your `~/.zshrc`.
 
@@ -51,11 +53,14 @@ You can keep up to date by using git.
 1. Use the [download ZIP](https://github.com/joshjon/bliss-zsh/archive/master.zip) option and unzip the files.
 2. Move `bliss.zsh-theme` into to the Oh My Zsh theme folder:
 
-        <oh-my-zsh-path>/themes/bliss.zsh-theme.
+                    <oh-my-zsh-path>/themes/bliss.zsh-theme.
 
 3. Add `ZSH_THEME="bliss"` to your `~/.zshrc`.
 
 ### Author
 
 Joshua Jon<br>
-GitHub: https://github.com/joshjon  
+GitHub: https://github.com/joshjon
+
+Modified by jckli<br>
+GitHub: https://github.com/jckli
